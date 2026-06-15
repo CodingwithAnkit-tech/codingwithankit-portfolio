@@ -313,6 +313,165 @@
 
     @media(max-width:768px){ #about .container { grid-template-columns: 1fr; } }
 
+/* ── Posts Section ── */
+/* ── Posts Section ── */
+#post{
+  background: var(--bg1);
+  padding-top: 60px;
+  padding-bottom: 20px; /* Space kam */
+  min-height: auto;
+}
+
+/* Toggle Header */
+.memories-toggle{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  cursor:pointer;
+  padding:15px 25px;
+  background:var(--bg3);
+  border:1px solid var(--border);
+  border-radius:18px;
+  transition:.3s;
+}
+
+.memories-toggle:hover{
+  border-color:var(--cyan);
+  box-shadow:0 0 20px rgba(0,229,255,.08);
+}
+
+.memories-toggle .section-title{
+  margin:0 !important;
+}
+
+.memories-toggle i{
+  color:var(--cyan);
+  font-size:1.3rem;
+  transition:.3s;
+}
+
+.rotate{
+  transform:rotate(180deg);
+}
+
+/* Hidden By Default */
+.post-feed{
+  display:none;
+}
+
+.post-feed.show{
+  display:flex;
+  flex-direction:column;
+  gap:2rem;
+  margin-top:25px;
+}
+
+/* Post Card */
+.post-card{
+  background:var(--bg3);
+  border:1px solid var(--border);
+  border-radius:20px;
+  overflow:hidden;
+  transition:.35s ease;
+}
+
+.post-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(0,229,255,.3);
+  box-shadow:0 10px 30px rgba(0,229,255,.08);
+}
+
+/* Header */
+.post-header{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  padding:1.25rem;
+}
+
+.post-avatar{
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  object-fit:cover;
+  border:2px solid var(--cyan);
+}
+
+.post-user h4{
+  margin:0;
+  color:var(--text);
+}
+
+.post-user span{
+  font-size:.8rem;
+  color:var(--muted);
+}
+
+/* Content */
+.post-content{
+  padding:0 1.25rem 1rem;
+}
+
+.post-content h3{
+  color:var(--text);
+  margin-bottom:.75rem;
+}
+
+.post-content p{
+  color:var(--muted);
+  line-height:1.8;
+}
+
+/* Image */
+.post-image img{
+    width:100%;
+    height:auto;
+    max-height:700px;
+    object-fit:contain;
+    border-radius:14px;
+    display:block;
+}
+
+.post-image img:hover{
+  transform:scale(1.02);
+}
+
+/* Footer */
+.post-footer{
+  display:flex;
+  justify-content:space-between;
+  padding:1rem 1.25rem;
+  border-top:1px solid var(--border);
+  color:var(--muted);
+  font-size:.85rem;
+}
+
+.post-footer i{
+  color:var(--cyan);
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+  #post{
+    padding-top:40px;
+    padding-bottom:0px;
+  }
+
+  .post-content h3{
+    font-size:1.15rem;
+  }
+
+  .post-footer{
+    flex-direction:column;
+    gap:10px;
+    align-items:flex-start;
+  }
+}
+
+
+
+
     /* ── Services ── */
     #services .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.5rem; }
 
@@ -533,6 +692,7 @@
     <div class="nav-links" id="navLinks">
       <a href="#home">Home</a>
       <a href="#about">About</a>
+      <a href="#post">Post</a>
       <a href="#services">Expertise</a>
       <a href="#portfolio">Projects</a>
       <a href="#contact">Contact</a>
@@ -681,6 +841,85 @@
     </div>
   </div>
 </section>
+
+<!-- Post -->
+<section id="post">
+  <div class="container">
+
+    <div class="section-label reveal">Life Beyond Coding</div>
+
+    <!-- Clickable Heading -->
+    <div class="memories-toggle reveal" onclick="toggleMemories()">
+      <h2 class="section-title">Posts & Memories</h2>
+      <i class="fas fa-chevron-down" id="memoryIcon"></i>
+    </div>
+
+    <!-- Hidden By Default -->
+    <div class="post-feed" id="postFeed">
+
+
+      <!-- Post Card 1 -->
+      <div class="post-card reveal">
+        <div class="post-header">
+          <img src="images/profile.jpg"alt="Profile" class="post-avatar">
+
+          <div class="post-user">
+            <h4>Ankit Verma ✨</h4>
+            <span>📍 M.G.S Sultanpur • 10 Sep 2024</span>
+          </div>
+        </div>
+
+        <div class="post-content">
+          <h3>🎓 Intermediate Days at MGS Inter College</h3>
+          <p>
+            Back in 2020 at MGS Inter College, Sultanpur — a time filled with friendships, classroom memories, and unforgettable moments. These school days played an important role in shaping who I am today. Grateful for the lessons, experiences, and lifelong bonds created during this journey. 💙
+          </p>
+        </div>
+
+        <div class="post-image">
+          <img src="images/cart 1 .jpeg" alt="Memory">
+        </div>
+
+        <div class="post-footer">
+          <span><i class="fas fa-calendar"></i> June- 2020</span>
+          <span><i class="fas fa-tag"></i> School Completion</span>
+        </div>
+      </div>
+
+      <!-- Post Card 2 -->
+      <div class="post-card reveal">
+        <div class="post-header">
+          <img src="images/profile.jpg" alt="Profile" class="post-avatar">
+
+          <div class="post-user">
+            <h4>Ankit Verma ✨</h4>
+            <span>📍 College Campus • 2026</span>
+          </div>
+        </div>
+
+        <div class="post-content">
+          <h3>📸 College Memories</h3>
+          <p>
+            Some moments become memories for a lifetime. Grateful for friends,
+            experiences, and unforgettable college days. ❤️
+          </p>
+        </div>
+
+        <div class="post-image">
+          <img src="images/college-memory.jpg" alt="College Memory">
+        </div>
+
+        <div class="post-footer">
+          <span><i class="fas fa-calendar"></i> May 2026</span>
+          <span><i class="fas fa-tag"></i> College Life</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+    
 
 <!-- Expertise -->
 <section id="services">
@@ -1105,6 +1344,7 @@
     document.getElementById('navLinks').classList.remove('open');
   }));
 
+
   // Contact form
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyBA2-7EVGROSrvrGHof85eHcJ4w4_qbCp3CGAX5ZA9NhSrbq3G1cA2z2vYIFwdFxR3/exec';
   const form = document.forms['submit-to-google-sheet'];
@@ -1135,5 +1375,23 @@
     });
   }
 </script>
+
+<script>
+function toggleMemories() {
+    const feed = document.getElementById("postFeed");
+    const icon = document.getElementById("memoryIcon");
+    const divider = document.getElementById("postDivider");
+
+    feed.classList.toggle("show");
+    icon.classList.toggle("rotate");
+
+    if (feed.classList.contains("show")) {
+        divider.style.display = "block";
+    } else {
+        divider.style.display = "none";
+    }
+}
+</script>
+
 </body>
 </html>
