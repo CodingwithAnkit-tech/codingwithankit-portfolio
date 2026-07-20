@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============ Primary SEO ============ -->
+  <title>CodingWithAnkit Blog — Python, SQL, Power BI & Data Analytics Tutorials</title>
+  <meta name="description" content="CodingWithAnkit Blog by Ankit Verma — in-depth, practical tutorials on Python, SQL, Power BI, Machine Learning, Data Analytics, JavaScript and HTML/CSS for developers and data professionals.">
+  <meta name="keywords" content="CodingWithAnkit, Ankit Verma, Python tutorials, SQL tutorials, Power BI, Machine Learning, Data Analytics, JavaScript, HTML CSS, coding blog, data science blog">
+  <meta name="author" content="Ankit Verma">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://codingwithankit-portfolio.netlify.app/blog/">
+
+  <!-- ============ Open Graph ============ -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CodingWithAnkit">
+  <meta property="og:title" content="CodingWithAnkit Blog — Python, SQL, Power BI & Data Analytics Tutorials">
+  <meta property="og:description" content="Practical, no-fluff tutorials on Python, SQL, Power BI, Machine Learning, Data Analytics, JavaScript and HTML/CSS — written by Ankit Verma.">
+  <meta property="og:url" content="https://codingwithankit-portfolio.netlify.app/blog/">
+  <meta property="og:image" content="https://codingwithankit-portfolio.netlify.app/images/og-image.png">
+  <meta property="og:locale" content="en_US">
+
+  <!-- ============ Twitter Cards ============ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CodingWithAnkit Blog — Python, SQL, Power BI & Data Analytics Tutorials">
+  <meta name="twitter:description" content="Practical, no-fluff tutorials on Python, SQL, Power BI, Machine Learning, Data Analytics, JavaScript and HTML/CSS — written by Ankit Verma.">
+  <meta name="twitter:image" content="https://codingwithankit-portfolio.netlify.app/assets/og-cover.jpg">
+
+  <!-- ============ Schema Ready (JSON-LD) ============ -->
+  <!-- Populate @graph with real post data at build time for rich results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "CodingWithAnkit Blog",
+    "url": "https://codingwithankit-portfolio.netlify.app/blog/",
+    "author": {
+      "@type": "Person",
+      "name": "Ankit Verma"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "CodingWithAnkit",
+      "url": "https://codingwithankit-portfolio.netlify.app"
+    },
+    "description": "Practical tutorials on Python, SQL, Power BI, Machine Learning, Data Analytics, JavaScript and HTML/CSS."
+  }
+  </script>
+
+  <!-- ============ Fonts & Icons ============ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⌘</text></svg>">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner container">
+      <a href="../index.html" class="navbar__logo">
+        <span class="navbar__logo-icon" aria-hidden="true">&lt;/&gt;</span>
+        <span class="navbar__logo-text">Coding<span class="text-accent">With</span>Ankit</span>
+      </a>
+
+      <nav class="navbar__nav" id="primaryNav" aria-label="Primary">
+        <ul class="navbar__menu">
+          <li><a href="../index.html" class="navbar__link">Home</a></li>
+          <li><a href="index.html" class="navbar__link is-active">Blog</a></li>
+          <li><a href="../index.html#portfolio" class="navbar__link">Projects</a></li>
+          <li><a href="../index.html#about" class="navbar__link">About</a></li>
+          <li><a href="../index.html#contact" class="navbar__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__gradient"></div>
+        <div class="hero__grid"></div>
+        <span class="floating-icon fi-1" aria-hidden="true">{ }</span>
+        <span class="floating-icon fi-2" aria-hidden="true">&lt;/&gt;</span>
+        <span class="floating-icon fi-3" aria-hidden="true">SELECT *</span>
+        <span class="floating-icon fi-4" aria-hidden="true">df.head()</span>
+        <span class="floating-icon fi-5" aria-hidden="true">π</span>
+        <span class="floating-icon fi-6" aria-hidden="true">#!/usr</span>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow reveal">The CodingWithAnkit Journal</p>
+          <h1 id="hero-heading" class="hero__title reveal">
+            Code, Query &amp; Analyze —<br> one clear tutorial at a time.
+          </h1>
+          <p class="hero__subtitle reveal">
+            Practical, no-fluff write-ups on Python, SQL, Power BI, Machine Learning
+            and Data Analytics — built from real projects, not textbooks.
+          </p>
+          <div class="hero__cta reveal">
+            <a href="#latest" class="btn btn--primary">Start Reading <span aria-hidden="true">→</span></a>
+            <a href="#newsletter" class="btn btn--ghost">Join the Newsletter</a>
+          </div>
+        </div>
+
+        <div class="hero__panel reveal" aria-hidden="true">
+          <div class="terminal glass">
+            <div class="terminal__bar">
+              <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+              <span class="terminal__title">query.py</span>
+            </div>
+            <pre class="terminal__body"><code id="typedCode"></code><span class="terminal__cursor">▌</span></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SEARCH + CATEGORIES ================= -->
+    <section class="explore container" aria-labelledby="explore-heading">
+      <h2 id="explore-heading" class="visually-hidden">Search and filter articles</h2>
+
+      <div class="search-bar glass">
+        <svg class="search-bar__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+          <path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <input type="search" id="searchInput" class="search-bar__input" placeholder="Search articles — try “SQL joins” or “pandas”"
+               aria-label="Search blog posts">
+        <button type="button" class="search-bar__clear" id="searchClear" aria-label="Clear search" hidden>&times;</button>
+      </div>
+
+      <div class="categories" id="categoryList" role="tablist" aria-label="Filter posts by category">
+        <button class="category-chip is-active" data-category="all" role="tab" aria-selected="true">All</button>
+        <button class="category-chip" data-category="python" role="tab" aria-selected="false">Python</button>
+        <button class="category-chip" data-category="sql" role="tab" aria-selected="false">SQL</button>
+        <button class="category-chip" data-category="powerbi" role="tab" aria-selected="false">Power BI</button>
+        <button class="category-chip" data-category="ml" role="tab" aria-selected="false">Machine Learning</button>
+        <button class="category-chip" data-category="analytics" role="tab" aria-selected="false">Data Analytics</button>
+        <button class="category-chip" data-category="javascript" role="tab" aria-selected="false">JavaScript</button>
+        <button class="category-chip" data-category="htmlcss" role="tab" aria-selected="false">HTML/CSS</button>
+      </div>
+
+      <p id="noResults" class="no-results" hidden>No articles match your search. Try a different keyword.</p>
+    </section>
+
+    <!-- ================= FEATURED POST ================= -->
+    <section class="section featured container" aria-labelledby="featured-heading">
+      <div class="section__head reveal">
+        <p class="eyebrow">Editor's Pick</p>
+        <h2 id="featured-heading" class="section__title">Featured Article</h2>
+      </div>
+
+      <article class="featured-card glass reveal">
+        <a href="/blog/mastering-sql-window-functions/" class="featured-card__media">
+          <img src="https://images.unsplash.com/photo-1544256718-3bcf237f3974?auto=format&fit=crop&w=1200&q=60"
+               alt="Laptop screen showing SQL query results in a code editor" loading="lazy" width="1200" height="800">
+          <span class="badge badge--category">SQL</span>
+        </a>
+        <div class="featured-card__body">
+          <div class="post-meta">
+            <span class="post-meta__author">
+              <img class="avatar" src="https://api.dicebear.com/7.x/initials/svg?seed=Ankit%20Verma&backgroundColor=2563EB" alt="" loading="lazy" width="28" height="28">
+              Ankit Verma
+            </span>
+            <span class="post-meta__dot" aria-hidden="true">•</span>
+            <time class="post-meta__date" datetime="2026-07-14">Jul 14, 2026</time>
+            <span class="post-meta__dot" aria-hidden="true">•</span>
+            <span class="post-meta__read">9 min read</span>
+          </div>
+          <h3 class="featured-card__title">
+            <a href="/blog/mastering-sql-window-functions/">Mastering SQL Window Functions: RANK, LEAD &amp; LAG Explained with Real Queries</a>
+          </h3>
+          <p class="featured-card__desc">
+            Window functions confuse most SQL learners — until they see them solve an actual business
+            problem. This deep-dive breaks down RANK, ROW_NUMBER, LEAD and LAG with datasets you can
+            run yourself.
+          </p>
+          <a href="/blog/mastering-sql-window-functions/" class="btn btn--primary btn--sm">Read More <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    </section>
+
+    <!-- ================= LATEST ARTICLES ================= -->
+    <section class="section latest container" id="latest" aria-labelledby="latest-heading">
+      <div class="section__head reveal">
+        <p class="eyebrow">Fresh off the editor</p>
+        <h2 id="latest-heading" class="section__title">Latest Articles</h2>
+      </div>
+
+      <div class="grid" id="postsGrid">
+        <!-- Cards are rendered by script.js from the postData array for easy search/filter -->
+      </div>
+    </section>
+
+    <!-- ================= POPULAR TAGS ================= -->
+    <section class="section tags container" aria-labelledby="tags-heading">
+      <div class="section__head reveal">
+        <p class="eyebrow">Browse by keyword</p>
+        <h2 id="tags-heading" class="section__title">Popular Tags</h2>
+      </div>
+      <ul class="tag-cloud reveal">
+        <li><a class="tag" href="/blog/tag/python/">#Python</a></li>
+        <li><a class="tag" href="/blog/tag/sql/">#SQL</a></li>
+        <li><a class="tag" href="/blog/tag/powerbi/">#PowerBI</a></li>
+        <li><a class="tag" href="/blog/tag/ai/">#AI</a></li>
+        <li><a class="tag" href="/blog/tag/machine-learning/">#MachineLearning</a></li>
+        <li><a class="tag" href="/blog/tag/data-analytics/">#DataAnalytics</a></li>
+        <li><a class="tag" href="/blog/tag/html/">#HTML</a></li>
+        <li><a class="tag" href="/blog/tag/css/">#CSS</a></li>
+        <li><a class="tag" href="/blog/tag/javascript/">#JavaScript</a></li>
+      </ul>
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+    <section class="section newsletter container" id="newsletter" aria-labelledby="newsletter-heading">
+      <div class="newsletter__card glass reveal">
+        <div class="newsletter__text">
+          <h2 id="newsletter-heading" class="section__title">Get new articles in your inbox</h2>
+          <p>One practical email whenever a new tutorial drops. No spam, unsubscribe anytime.</p>
+        </div>
+        <form class="newsletter__form" id="newsletterForm" novalidate>
+          <label for="newsletterEmail" class="visually-hidden">Email address</label>
+          <input type="email" id="newsletterEmail" name="email" placeholder="you@example.com" required
+                 autocomplete="email" aria-describedby="newsletterMsg">
+          <button type="submit" class="btn btn--primary">Subscribe</button>
+        </form>
+        <p id="newsletterMsg" class="newsletter__msg" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col footer__about">
+        <a href="../index.html" class="navbar__logo">
+          <span class="navbar__logo-icon" aria-hidden="true">&lt;/&gt;</span>
+          <span class="navbar__logo-text">Coding<span class="text-accent">With</span>Ankit</span>
+        </a>
+        <p>A developer's journal on Python, SQL, Power BI and Data Analytics — written by
+          <strong>Ankit Verma</strong> to make hard data concepts easy to ship.</p>
+      </div>
+
+      <nav class="footer__col" aria-labelledby="footer-links-heading">
+        <h3 id="footer-links-heading">Quick Links</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="../index.html#portfolio">Projects</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <h3>Categories</h3>
+        <ul>
+          <li><a href="/blog/tag/python/">Python</a></li>
+          <li><a href="/blog/tag/sql/">SQL</a></li>
+          <li><a href="/blog/tag/powerbi/">Power BI</a></li>
+          <li><a href="/blog/tag/machine-learning/">Machine Learning</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3>Connect</h3>
+        <div class="footer__socials">
+          <a href="https://github.com/CodingwithAnkit-tech" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 4.84 3.14 8.94 7.49 10.39.55.1.75-.24.75-.53 0-.26-.01-.94-.02-1.85-3.05.66-3.7-1.47-3.7-1.47-.5-1.27-1.22-1.61-1.22-1.61-.99-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.57 1.2 3.2.92.1-.71.38-1.2.7-1.48-2.44-.28-5-1.22-5-5.43 0-1.2.43-2.18 1.13-2.94-.11-.28-.49-1.4.11-2.92 0 0 .92-.3 3.02 1.12a10.5 10.5 0 0 1 5.5 0c2.1-1.42 3.02-1.12 3.02-1.12.6 1.52.22 2.64.11 2.92.7.76 1.13 1.74 1.13 2.94 0 4.22-2.57 5.15-5.02 5.42.39.34.74 1.02.74 2.06 0 1.49-.01 2.68-.01 3.05 0 .29.2.64.76.53 4.34-1.45 7.48-5.55 7.48-10.39C23.02 5.24 18.27.5 12 .5Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/codingwithankit " target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/instaman_100" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.75 3.75 0 0 1-1.38-.9 3.75 3.75 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07ZM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.8.31-1.48.72-2.15 1.4-.68.67-1.09 1.36-1.4 2.15-.3.76-.5 1.64-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.8.72 1.48 1.4 2.15.67.68 1.36 1.09 2.15 1.4.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.8-.31 1.48-.72 2.15-1.4.68-.67 1.09-1.35 1.4-2.15.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.4-2.15A5.88 5.88 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84A6.16 6.16 0 1 0 12 18.16 6.16 6.16 0 0 0 12 5.84Zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.41-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0Z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@codingwithankit123" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 7.19a3.02 3.02 0 0 0-2.12-2.14C19.5 4.5 12 4.5 12 4.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 7.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 4.81 3.02 3.02 0 0 0 2.12 2.14C4.5 19.5 12 19.5 12 19.5s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-4.81ZM9.6 15.4V8.6L15.8 12l-6.2 3.4Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom container">
+      <p>&copy; <span id="year"></span> CodingWithAnkit. All rights reserved. Built by Ankit Verma.</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" hidden>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
