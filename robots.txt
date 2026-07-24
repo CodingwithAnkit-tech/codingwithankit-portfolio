@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://codingwithankit-portfolio.netlify.app/sitemap.xml
+Sitemap: https://ankitiqcode-portfolio.netlify.app/sitemap.xml
